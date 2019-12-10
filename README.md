@@ -6,8 +6,8 @@ This module is made to work with MTA resources. It can throw a request and get w
 new MTA( 'localhost', '22005', 'user', 'password' )
 await MTA.call(resource_name, function_name, arguments={})
 ### NodeJS Example
-var MTA = require('/mta/mta.js');
 ```javascript
+var MTA = require('/mta/mta.js');
 var myserver = new MTA('localhost', '22005', 'user', 'password'); // Connect to http://localhost:22005
 var returns = await myserver.call('resource_name', 'function_name', ['arg1', 'arg2', 5, ['table']]);
 console.log('returns'); // ['test return']
@@ -20,5 +20,5 @@ function chat ( text )
 	return 'test return'
 end
 ```
-##### meta.xml
-<export function="chat" http="true" />
+#### meta.xml
+##### <export function="chat" http="true" />
