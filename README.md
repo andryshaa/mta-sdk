@@ -22,5 +22,5 @@ end
 ```
 #### meta.xml
 ```xml
-##### <export function="chat" http="true" />
+<export function="chat" http="true" />
 ```
