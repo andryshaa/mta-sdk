@@ -3,8 +3,8 @@
 This module is made to work with MTA resources. It can throw a request and get what the resource returned.
 
 ##### Syntax:
-new MTA( 'localhost', '22005', 'user', 'password' )
-await MTA.call(resource_name, function_name, arguments={})
+MTA( 'localhost', '22005', 'user', 'password' );
+MTA.call(resource_name, function_name, arguments={});
 ### NodeJS Example
 ```javascript
 var MTA = require('/mta/mta.js');
