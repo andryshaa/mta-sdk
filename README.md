@@ -10,7 +10,7 @@ MTA.call(resource_name, function_name, arguments={});
 var MTA = require('/mta/mta.js');
 var myserver = new MTA('localhost', '22005', 'user', 'password'); // Connect to http://localhost:22005
 var returns = await myserver.call('resource_name', 'function_name', ['arg1', 'arg2', 5, ['table']]);
-console.log('returns'); // ['test return']
+console.log(returns); // ['test return']
 ```
 ### Lua example
 ##### server.lua
