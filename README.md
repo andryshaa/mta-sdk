@@ -13,12 +13,14 @@ var returns = await myserver.call('resource_name', 'function_name', ['arg1', 'ar
 console.log('returns'); // ['test return']
 ```
 ### Lua example
-```lua
 ##### server.lua
+```lua
 function chat ( text )
 	outputChatBox( text, nil, 255, 255, 255, true )
 	return 'test return'
 end
 ```
 #### meta.xml
+```xml
 ##### <export function="chat" http="true" />
+```
